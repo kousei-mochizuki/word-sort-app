@@ -10,8 +10,9 @@ npmでもyarnでも好きな物をインストールしておく（➀のコマ�
 Microsoft C++ Build Toolsをインストールしておく
 ```
 
-#### ➀まずは `$ npm create tauri-app@latest` を実行する
-#### ➁できたプロジェクトフォルダの `src` の `App.tsx` と `App.css` をここにあるプログラムに置き換える
+#### ➀まずはターミナルで `$ npm create tauri-app@latest` を実行する
+#### ➁ターミナルの指示通りに進めていく（TAURIのインストールと関数呼び出し方法を見ながら、フレームワークはReact、テンプレートはTypeScriptを選択する）
+#### ➂できたプロジェクトフォルダの `src` の `App.tsx` と `App.css` をここにあるプログラムに置き換える
 #### ➂完成。
 
 ```
