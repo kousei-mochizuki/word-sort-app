@@ -1,0 +1,117 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.clusters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.cluster {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.cluster:hover {
+  background-color: #f0f0f0;
+}
+
+.cluster h3 {
+  margin: 0 0 5px 0;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.word {
+  background-color: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  user-select: none;
+  cursor: pointer;
+}
+
+.word:hover {
+  background-color: #e0e0e0;
+}
+
+.word.moved {
+  background-color: #ffd700;
+}
+
+.word.highlighted {
+  background-color: #ff6347;
+}
+
+.word.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.sidebar {
+  width: 200px;
+  border-left: 1px solid #ccc;
+  padding-left: 10px;
+  overflow-y: auto;
+  font-size: 0.8em;
+}
+
+button {
+  padding: 3px 6px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.remove-button {
+  background-color: #ccc;
+  color: #333;
+}
+
+.remove-button:hover {
+  background-color: #bbb;
+}
+
+input[type="text"] {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
