@@ -5,7 +5,7 @@
 ・Rust
 https://www.rust-lang.org/tools/install
 ・Node.js
-npmでもyarnでも好きな物をインストールしておく
+npmでもyarnでも好きな物をインストールしておく（➀のコマンドが変わるのでそこは臨機応変に）
 ・各種ビルドツール
 Microsoft C++ Build Toolsをインストールしておく
 ```
