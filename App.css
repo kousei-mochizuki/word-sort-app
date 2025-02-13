@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #eff6ff;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #eff6ff;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  /* background-color: aqua; */
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
+}
+
+.clusters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 5px;
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.cluster {
+  background-color: #eaecee;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.cluster:hover {
+  background-color: #ffffe6;
+  border-color: #ffd700;
+}
+
+.cluster h3 {
+  margin: 0 0 5px 0;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.word {
+  background-color: #ffffff;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  user-select: none;
+  cursor: pointer;
+}
+
+.word:hover {
+  background-color: #e0e0e0;
+}
+
+.word.moved {
+  background-color: #ffd700;
+}
+
+.word.highlighted {
+  background-color: #ff6347;
+}
+
+.word.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.missing-word {
+  background-color: #ffcccc;
+  color: #A61B3B;
+}
+
+.missing-word:hover {
+  background-color: #ff9999;
+}
+
+.missing-word.selected {
+  background-color: #ff6666;
+  color: white;
+}
+
+.sidebar {
+  width: 300px;
+  border-left: 2px solid #ccc;
+  padding-left: 10px;
+  overflow-y: auto;
+  font-size: 0.8em;
+  height: 100%;
+}
+
+h3 {
+  user-select: none;
+}
+
+button {
+  padding: 3px 6px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.8em;
+}
+
+/* button:hover {
+  background-color: #45a049;
+} */
+
+.openfile-btn {
+  background-color: #4F46E5;
+  color: #ffffff;
+}
+
+.openfile-btn:hover {
+  background-color: #231BBF;
+}
+
+.addcluster-btn {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  color: #657786;
+  font-size: 0.8em;
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+.remove-btn:hover {
+  color: #e0245e;
+}
+
+input[type="text"] {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.8em;
+  user-select: none;
+}
