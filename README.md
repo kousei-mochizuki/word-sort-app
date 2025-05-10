@@ -1,18 +1,19 @@
-# word-sort-app
+# word_sort_app
 
-【概要】
+![gif](https://github.com/kousei-mochizuki/word_sort_app/blob/main/images/wordsort.gif)
+
+## Overview
+
 性格語をクラスタリングする際に視覚的にグループ分けを行い、
 テキストに出力することができるツール
 
-【実行方法】
+## Requirement
+
 ※ 以下の3つをダウンロードしておく
 ```
 ・Rust
 https://www.rust-lang.org/tools/install
 ・Node.js
-npmでもyarnでも好きな物をインストールしておく（➀のコマンドが変わるのでそこは臨機応変に）
-・各種ビルドツール
-Microsoft C++ Build Toolsをインストールしておく
 ```
 
 #### ➀まずはターミナルで `$ npm create tauri-app@latest` を実行する
@@ -21,12 +22,18 @@ Microsoft C++ Build Toolsをインストールしておく
 #### ➂完成。
 
 ```
-参考
-Tauriでデスクトップアプリを開発する
-https://qiita.com/k-yaina60/items/d120a39578a3b29b953d
-TAURIのインストールと関数呼び出し方法
-https://qiita.com/tarou-imokenpi/items/84798005ed7519502566
-```
+
+## Usage
+
+`build` > `word_sort_app_v1.zip` をダウンロード
+
+`word_sort_app.exe` を起動
+[ファイルを開く]から `example.synset` を選択する
+
+## Reference
+
+- [Tauriでデスクトップアプリを開発する](https://qiita.com/k-yaina60/items/d120a39578a3b29b953d)
+- [TAURIのインストールと関数呼び出し方法](https://qiita.com/tarou-imokenpi/items/84798005ed7519502566)
 
 ```
 一応各種node_moduleのバージョンを追記
