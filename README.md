@@ -21,8 +21,6 @@ https://www.rust-lang.org/tools/install
 #### ➂できたプロジェクトフォルダの `src` の `App.tsx` と `App.css` をここにあるプログラムに置き換える
 #### ➂完成。
 
-```
-
 ## Usage
 
 `build` > `word_sort_app_v1.zip` をダウンロード
